@@ -1,4 +1,11 @@
 # My Project
+## Ubuntu PC Auto Setup
+```bash
+wget https://raw.githubusercontent.com/j-wye/j-wye.github.io/main/autoset.sh
+bash autoset.sh
+source ~/.bashrc
+```
+
 ## Research Log[🔗](./research_log/README.md)
 
 ## ISSUE[🔗](./issue/READEME.md)
