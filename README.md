@@ -5,9 +5,9 @@ bash autoset.sh
 source ~/.bashrc
 ```
 
-### Research Log[🔗](./research_log/README.md)
+### Research Log [🔗](./research_log/README.md)
 
-### ISSUE[🔗](./issue/READEME.md)
+### ISSUE [🔗](./issue/READEME.md)
 
 # All about Progress
 - Autonomous Driving Competition with ERP42 Platform[🔗](../erp42_drive/README.md)
