@@ -1,4 +1,4 @@
-# My Project
+# All about Progress
 ## Ubuntu PC Auto Setup
 ```bash
 wget https://raw.githubusercontent.com/j-wye/j-wye.github.io/main/autoset.sh
