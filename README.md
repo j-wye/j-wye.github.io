@@ -1,4 +1,3 @@
-# All about Progress
 ### Ubuntu PC Auto Setup
 ```bash
 wget https://raw.githubusercontent.com/j-wye/j-wye.github.io/main/autoset.sh
@@ -10,6 +9,7 @@ source ~/.bashrc
 
 ### ISSUE[🔗](./issue/READEME.md)
 
+# All about Progress
 - Autonomous Driving Competition with ERP42 Platform[🔗](../erp42_drive/README.md)
 
 - Autonomous Driving Competition with Turtlebot4 on Campus[🔗](../tb_project/README.md)
