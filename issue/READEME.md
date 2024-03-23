@@ -1,5 +1,5 @@
 # Basic Errors
-##‘GLIBCXX_3.4.30’ not found
+## ‘GLIBCXX_3.4.30’ not found
 conda environment에서 rclpy를 import할 때 발생함
 ```bash
 conda install -c conda-forge gcc=12.1.0
