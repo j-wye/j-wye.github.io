@@ -58,6 +58,7 @@ eval "$(cat ~/.bashrc | tail -n +10)"
 echo "Type 'source ~/.bashrc' to apply settings"
 
 sudo apt install terminator -y
+sudo apt install axel
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
 sudo reboot
