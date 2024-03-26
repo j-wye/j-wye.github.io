@@ -10,10 +10,10 @@ source ~/.bashrc
 ### ISSUE [🔗](./issue/READEME.md)
 
 # All about Progress
-- Autonomous Driving Competition with ERP42 Platform[🔗](../erp42_drive/README.md)
+- Autonomous Driving Competition with ERP42 Platform[🔗](https://github.com/j-wye/erp42_drive/README.md)
 
-- Autonomous Driving Competition with Turtlebot4 on Campus[🔗](../tb_project/README.md)
+- Autonomous Driving Competition with Turtlebot4 on Campus[🔗](https://github.com/j-wye/tb_project/README.md)
 
-- Personal Projects about Object Detection[🔗](../Personal_Projects/README.md)
+- Personal Projects about Object Detection[🔗](https://github.com/j-wye/Personal_Projects/README.md)
 
 - Colonoscopy Gazebo Simulation[🔗](https://github.com/j-wye/endoscope_project)
