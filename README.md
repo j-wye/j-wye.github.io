@@ -16,4 +16,4 @@ source ~/.bashrc
 
 - Personal Projects about Object Detection[🔗](../Personal_Projects/README.md)
 
-- Colonoscopy Gazebo Simulation[🔗](../endoscope_project/README.md)
+- Colonoscopy Gazebo Simulation[🔗](https://github.com/j-wye/endoscope_project/README.md)
