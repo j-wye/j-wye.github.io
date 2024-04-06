@@ -1,5 +1,5 @@
 #### 2024-04-07
-- gazebo_project를 만들고 ADC (Autonomous Driving Car) 프로젝트 시작
+- gazebo_project를 만들고 ADC (Autonomous Driving Car) 프로젝트 시작 [🔗](https://github.com/j-wye/gazebo_project/tree/main/ADC)
 - robot core와 depth camera, 2d lidar 까지 설정 완료
 
 #### 2024-04-이후
