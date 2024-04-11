@@ -1,4 +1,9 @@
 ### Ubuntu PC Auto Setup
+- Ubuntu 22.04 **Humble**
+- **Nvidia-driver-525**
+- **CUDA 11.8**
+- **cuDNN 8.7.0**
+- include **Anaconda**
 ```bash
 wget https://raw.githubusercontent.com/j-wye/j-wye.github.io/main/autoset.sh
 bash autoset.sh
