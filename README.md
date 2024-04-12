@@ -4,12 +4,24 @@
 - **CUDA 11.8**
 - **cuDNN 8.7.0**
 - include **Anaconda**
+
+If you want to setup include CUDA, cuDNN and Anaconda follows (***I recommend***):
 ```bash
 mkdir -p A && cd ~/A
 wget https://raw.githubusercontent.com/j-wye/j-wye.github.io/main/autoset.sh
 bash autoset.sh
 source ~/.bashrc
 ```
+
+But if you want to setup just Ubuntu basic Settings without CUDA, cuDNN and Anaconda follows:
+```bash
+mkdir -p A && cd ~/A
+wget https://raw.githubusercontent.com/j-wye/j-wye.github.io/main/basic_autoset.sh
+bash basic_autoset.sh
+source ~/.bashrc
+```
+Can refer to settings [🔗](./settings.md)
+
 - Additional Settings
     - Korean Keyboard
 
