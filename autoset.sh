@@ -58,7 +58,6 @@ echo "Type 'source ~/.bashrc' to apply settings"
 
 sudo apt install axel terminator -y
 
-mkdir -p A && cd A
 axel https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 axel https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
 axel https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
