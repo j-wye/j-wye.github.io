@@ -5,10 +5,22 @@
 - **cuDNN 8.7.0**
 - include **Anaconda**
 ```bash
+mkdir -p A && cd ~/A
 wget https://raw.githubusercontent.com/j-wye/j-wye.github.io/main/autoset.sh
 bash autoset.sh
 source ~/.bashrc
 ```
+- Additional Settings
+    - Korean Keyboard
+
+        At Terminal `ibus-setup`
+        ```
+        Input Method -> Add -> Korean -> Hangul -> Add -> Preferences -> Add(Hangul Toggle Key)
+        ```
+        After enter `gnome-control-center` at terminal
+        ```
+        Keyboard -> Input Sources (+) -> Korean -> Hangul -> Add
+        ```
 
 ### Research Log [🔗](./research_log/README.md)
 

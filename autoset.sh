@@ -6,6 +6,7 @@ sudo apt update
 sudo apt install fonts-noto-cjk-extra gnome-user-docs-ko hunspell-ko ibus-hangul language-pack-gnome-ko language-pack-ko hunspell-en-gb hunspell-en-au hunspell-en-ca hunspell-en-za -y
 ibus restart
 sudo apt update && sudo apt upgrade -y
+sudo apt install nvidia-driver-525 -y
 sudo apt install software-properties-common -y
 sudo add-apt-repository universe -y
 sudo apt update && sudo apt install curl -y
@@ -56,8 +57,18 @@ eval "$(cat ~/.bashrc | tail -n +10)"
 echo "Type 'source ~/.bashrc' to apply settings"
 
 sudo apt install axel terminator -y
+
+mkdir -p A && cd A
 axel https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 axel https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
 axel https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
+
+# 내 구글 드라이브에서 cudnn 8.7.0 다운받는 방법
+pip3 install gdown
+gdown https://drive.google.com/uc?id=1pYPJpHcAWYk2xKw6qsXFS_hn0kS3bV9x
+
+wget https://raw.githubusercontent.com/j-wye/j-wye.github.io/main/additional_autoset.sh
+bash additional_autoset.sh
+source ~/.bashrc
 
 sudo reboot
