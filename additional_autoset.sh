@@ -5,7 +5,6 @@ echo 'export LD_LIBRARY_PATH="/usr/local/cuda-11.8/lib64:$LD_LIBRARY_PATH"' >> ~
 
 # cuDNN Installation
 tar -xvf cudnn-linux-x86_64-8.7.0.84_cuda11-archive.tar.xz && sudo rm -rf cudnn-linux-x86_64-8.7.0.84_cuda11-archive.tar.xz
-sudo mv ~/Downloads/cudnn-linux-x86_64-8.7.0.84_cuda11-archive ~/A/ && cd ~/A
 sudo cp cudnn-linux-x86_64-8.7.0.84_cuda11-archive/include/cudnn* /usr/local/cuda-11.8/include
 sudo cp cudnn-linux-x86_64-8.7.0.84_cuda11-archive/lib/libcudnn* /usr/local/cuda-11.8/lib64
 sudo chmod a+r /usr/local/cuda-11.8/include/cudnn.h /usr/local/cuda-11.8/lib64/libcudnn*
