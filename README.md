@@ -20,29 +20,32 @@ wget https://raw.githubusercontent.com/j-wye/j-wye.github.io/main/basic_autoset.
 bash basic_autoset.sh
 source ~/.bashrc
 ```
-Can refer to settings [🔗](./settings.md)
+And following [here](./settings.md) for additional settings.
 
-- Additional Settings
-    - Korean Keyboard
+- Korean Keyboard
 
-        At Terminal `ibus-setup`
-        ```
-        Input Method -> Add -> Korean -> Hangul -> Add -> Preferences -> Add(Hangul Toggle Key)
-        ```
-        After enter `gnome-control-center` at terminal
-        ```
-        Keyboard -> Input Sources (+) -> Korean -> Hangul -> Add
-        ```
+    At Terminal `ibus-setup`
+    ```
+    Input Method -> Add -> Korean -> Hangul -> Add -> Preferences -> Add(Hangul Toggle Key)
+    ```
+    After enter `gnome-control-center` at terminal
+    ```
+    Keyboard -> Input Sources (+) -> Korean -> Hangul -> Add
+    ```
 
 ### Research Log [🔗](./research_log/README.md)
 
 ### ISSUE [🔗](./issue/READEME.md)
 
 # All about Progress
-- Autonomous Driving Competition with ERP42 Platform[🔗](https://github.com/j-wye/erp42_drive)
+- Autonomous Driving Competition with ERP42 Platform [🔗](https://github.com/j-wye/erp42_drive)
 
-- Autonomous Driving Competition with Turtlebot4 on Campus[🔗](https://github.com/j-wye/tb_project)
+- Autonomous Driving Competition with Turtlebot4 on Campus [🔗](https://github.com/j-wye/tb_project)
 
-- Personal Projects about Object Detection[🔗](https://github.com/j-wye/Personal_Projects)
+- Personal Projects about Object Detection [🔗](https://github.com/j-wye/Personal_Projects)
 
-- Colonoscopy Gazebo Simulation[🔗](https://github.com/j-wye/endoscope_project)
+- Colonoscopy Gazebo Simulation [🔗](https://github.com/j-wye/endoscope_project)
+
+- DROID-SLAM [🔗](https://github.com/j-wye/droid_slam)
+
+- 
