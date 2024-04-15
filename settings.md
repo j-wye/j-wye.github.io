@@ -22,7 +22,7 @@ source ~/.bashrc
 ```
 
 ### Check your cuDNN version and Installation
-[First you have to check your GPU and CUDA compatibility](https://www.wikiwand.com/en/CUDA#GPUs_supported)
+First, you have to check your [GPU and CUDA compatibility](https://www.wikiwand.com/en/CUDA#GPUs_supported)
 
 And then
 
