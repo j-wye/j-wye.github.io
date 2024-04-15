@@ -13,7 +13,7 @@ bash autoset.sh
 source ~/.bashrc
 ```
 
-But if you want to setup just Ubuntu basic Settings without CUDA, cuDNN and Anaconda follows:
+But if you want to setup just Ubuntu basic Settings without CUDA and cuDNN, only include Anaconda follows:
 ```bash
 mkdir -p A && cd ~/A
 wget https://raw.githubusercontent.com/j-wye/j-wye.github.io/main/basic_autoset.sh

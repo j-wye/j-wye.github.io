@@ -27,7 +27,7 @@ sudo apt install ~nros-humble-rqt* -y
 sudo apt install python3-colcon-common-extensions ros-humble-image-transport-plugins python3-pip pv -y
 sudo apt-get install ros-humble-gazebo-msgs ros-humble-gazebo-plugins ros-humble-gazebo-ros ros-humble-gazebo-ros2-control ros-humble-gazebo-ros-pkgs -y
 sudo apt install ros-humble-octomap-ros libgoogle-glog-dev libgflags-dev -y
-sudo apt install ros-humble-turtlebot4-desktop ros-humble-turtlebot4-navigation ros-humble-teleop-twist-keyboard ros-humble-irobot-create-msgs ros-humble-turtlebot4-msgs -y
+sudo apt install ros-humble-turtlebot4-desktop ros-humble-turtlebot4-navigation ros-humble-teleop-twist-keyboard ros-humble-irobot-create-msgs* ros-humble-irobot-create-control ros-humble-irobot-create-description ros-humble-irobot-create-nodes* ros-humble-irobot-create-toolbox* ros-humble-turtlebot4-msgs -y
 sudo apt install 
 printenv | grep -i ROS_DISTRO
 
@@ -58,16 +58,48 @@ echo "Type 'source ~/.bashrc' to apply settings"
 
 sudo apt install axel terminator -y
 
+# chrome deb file download
 axel https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-axel https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
-axel https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
 
-# 내 구글 드라이브에서 cudnn 8.7.0 다운받는 방법
+# CUDA 11.8 Download
+axel https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
+
+# Anaconda Download
+axel https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Linux-x86_64.sh
+
+# 내 구글 드라이브에서 cudnn 8.7.0 다운
 pip3 install gdown
 gdown https://drive.google.com/uc?id=1pYPJpHcAWYk2xKw6qsXFS_hn0kS3bV9x
 
-wget https://raw.githubusercontent.com/j-wye/j-wye.github.io/main/additional_autoset.sh
-bash additional_autoset.sh
+# CUDA 11.8 Installation
+sudo sh cuda_11.8.0_520.61.05_linux.run
+echo 'export PATH="/usr/local/cuda-11.8/bin:$PATH"' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH="/usr/local/cuda-11.8/lib64:$LD_LIBRARY_PATH"' >> ~/.bashrc
+
+# cuDNN 8.7.0 Installation
+tar -xvf cudnn-linux-x86_64-8.7.0.84_cuda11-archive.tar.xz && sudo rm -rf cudnn-linux-x86_64-8.7.0.84_cuda11-archive.tar.xz
+sudo cp cudnn-linux-x86_64-8.7.0.84_cuda11-archive/include/cudnn* /usr/local/cuda-11.8/include
+sudo cp cudnn-linux-x86_64-8.7.0.84_cuda11-archive/lib/libcudnn* /usr/local/cuda-11.8/lib64
+sudo chmod a+r /usr/local/cuda-11.8/include/cudnn.h /usr/local/cuda-11.8/lib64/libcudnn*
+
+sudo ln -sf /usr/local/cuda-11.8/targets/x86_64-linux/lib/libcudnn_adv_train.so.8.7.0 /usr/local/cuda-11.8/targets/x86_64-linux/lib/libcudnn_adv_train.so.8
+sudo ln -sf /usr/local/cuda-11.8/targets/x86_64-linux/lib/libcudnn_ops_infer.so.8.7.0 /usr/local/cuda-11.8/targets/x86_64-linux/lib/libcudnn_ops_infer.so.8
+sudo ln -sf /usr/local/cuda-11.8/targets/x86_64-linux/lib/libcudnn_cnn_train.so.8.7.0 /usr/local/cuda-11.8/targets/x86_64-linux/lib/libcudnn_cnn_train.so.8
+sudo ln -sf /usr/local/cuda-11.8/targets/x86_64-linux/lib/libcudnn_adv_infer.so.8.7.0 /usr/local/cuda-11.8/targets/x86_64-linux/lib/libcudnn_adv_infer.so.8
+sudo ln -sf /usr/local/cuda-11.8/targets/x86_64-linux/lib/libcudnn_ops_train.so.8.7.0 /usr/local/cuda-11.8/targets/x86_64-linux/lib/libcudnn_ops_train.so.8
+sudo ln -sf /usr/local/cuda-11.8/targets/x86_64-linux/lib/libcudnn_cnn_infer.so.8.7.0 /usr/local/cuda-11.8/targets/x86_64-linux/lib/libcudnn_cnn_infer.so.8
+sudo ln -sf /usr/local/cuda-11.8/targets/x86_64-linux/lib/libcudnn.so.8.7.0 /usr/local/cuda-11.8/targets/x86_64-linux/lib/libcudnn.so.8
+
+sudo ldconfig
+
+ldconfig -N -v $(sed 's/:/ /' <<< $LD_LIBRARY_PATH) 2>/dev/null | grep libcudnn
+
+cat /usr/local/cuda-11.8/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
+
+# Anaconda Installation
+sha256sum Anaconda3-2024.02-1-Linux-x86_64.sh
+bash Anaconda3-2024.02-1-Linux-x86_64.sh
+echo 'export PATH="/opt/anaconda3/bin:$PATH" >> ~/.bashrc'
 source ~/.bashrc
 
 sudo reboot

@@ -58,13 +58,4 @@ echo "Type 'source ~/.bashrc' to apply settings"
 
 sudo apt install axel terminator -y
 
-mkdir -p A && cd A
-axel https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-axel https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
-axel https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
-
-# 내 구글 드라이브에서 cudnn 8.7.0 다운받는 방법
-pip3 install gdown
-gdown https://drive.google.com/uc?id=1pYPJpHcAWYk2xKw6qsXFS_hn0kS3bV9x
-
 sudo reboot
