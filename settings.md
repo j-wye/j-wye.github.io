@@ -24,11 +24,11 @@ source ~/.bashrc
 ### Check your GPU and CUDA Compatibility
 Before if you want to use tensorflow, check follow figure and check CUDA, cuDNN version
 
-<img src="./config/tensorflow_compatibility.png">
+<img src="./image/tensorflow_compatibility.png">
 
 First, you have to check your [GPU and CUDA compatibility](https://www.wikiwand.com/en/CUDA#GPUs_supported)
 
-<img src="./config/gpu_compatibility.png" width="480" height="360"><img src="./config/cuda_compatibility.png" width="480" height="360">
+<img src="./image/gpu_compatibility.png" width="480" height="360"><img src="./image/cuda_compatibility.png" width="480" height="360">
 
 And then choose which [CUDA version](https://developer.nvidia.com/cuda-toolkit-archive) you want to install. And follows:
 ```bash
