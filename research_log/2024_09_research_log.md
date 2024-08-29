@@ -15,7 +15,10 @@
     - 사라진 object의 expected trajectory를 Prediction하는 **<span style="color:red">Trajectory Prediction</span>** 을 진행
     - 실시간으로 들어오는 Environment Inforamtion를 사용해 expected trajectory를 지속적으로 수정하면서 발사체의 expected position을 결정하고 해당 위치로 이동하도록 **<span style="red">Nav2</span>** 를 사용해 path planning을 진행하며 최적 경로를 생성하며 움직이도록 함
         - 에를 들어, 벽이 1개인 줄 알고 1번 튕긴 발사체의 궤적을 예측하고 진행하던 Mobile Manipulator가 주행하면서 추가적인 정보를 토대로 옆쪽에 벽이 1개 더 있는 것을 알게되었다. 그러면 공이 2번 부딪히고 튕기면서 경로가 초기와는 매우 다르게 생성될 것이다. 이러한 방식으로 주행하면서 경로를 실시간으로 수정하면서 최적의 경로를 생성하며 물체를 grasp하고 원래의 자리로 돌아오도록 하는 것이 목표
-    - 이때, Holistic Control이 가능하므로 추가적으로 하고하자는 부분이 Exploration할 때에도 
+    - 이때, Holistic Control이 가능하므로 추가적으로 하고하자는 부분이 Exploration할 때에도 Manipulator Arm을 회전시키거나 움직이면서 주변 환경에 대한 정보를 빠르고 많이 얻을 수 있음. 이 부분이 Holistic Control과 Trajectory Prediction을 같이 진행했을 때 얻은 가장 큰 이점이라 생각하고 주제 선정
+        - Manipulator Arm의 자유로운 움직임을 위해서는 로봇의 안전성에 대한 기준이 필요하다고 생각
+            - 해당 기준 내에서는, 즉 Threshold를 넘지 않게 움직여야 하는데 이는 holistic control을 통해 mobile base와 manipulator arm에 대한 정보가 동시에 나와야지만 가능한 과정!
+        - 간단한 예시로, 기준을 rolling으로 잡으면 로봇이 넘어지지 않게 하는 threshold를 설정하고 그 안에서는 자유롭게 manipulator arm을 움직이도록 하면 많은 정보를 빠르게 얻을 수 있음
 
 - 연구주제의 Key는 **Holistic Control & Trajectory Prediction의 통합**
 
