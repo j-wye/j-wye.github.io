@@ -14,7 +14,11 @@
     - 발사체를 방 밖으로(시야에서 사라지도록) 향하도록 발사할 것, 이를 통해 시야에서 tracking하던 object를 사라지도록 함
     - 사라진 object의 expected trajectory를 Prediction하는 **<span style="color:red">Trajectory Prediction</span>** 을 진행
     - 실시간으로 들어오는 Environment Inforamtion를 사용해 expected trajectory를 지속적으로 수정하면서 발사체의 expected position을 결정하고 해당 위치로 이동하도록 **<span style="red">Nav2</span>** 를 사용해 path planning을 진행하며 최적 경로를 생성하며 움직이도록 함
+        - 에를 들어, 벽이 1개인 줄 알고 1번 튕긴 발사체의 궤적을 예측하고 진행하던 Mobile Manipulator가 주행하면서 추가적인 정보를 토대로 옆쪽에 벽이 1개 더 있는 것을 알게되었다. 그러면 공이 2번 부딪히고 튕기면서 경로가 초기와는 매우 다르게 생성될 것이다. 이러한 방식으로 주행하면서 경로를 실시간으로 수정하면서 최적의 경로를 생성하며 물체를 grasp하고 원래의 자리로 돌아오도록 하는 것이 목표
+    - 이때, Holistic Control이 가능하므로 추가적으로 하고하자는 부분이 Exploration할 때에도 
+
 - 연구주제의 Key는 **Holistic Control & Trajectory Prediction의 통합**
+
 - 논문 제목으로는 다음과 같이 후보 2개를 선정
     - **<span style="color:violet">Robust Holistic Control-Based Trajectory Prediction in Mobile Manipulation System</span>**
     - **<span style="color:violet">Integrating Trajectory Prediction with Holistic Control in Mobile Manipulation System</span>**
