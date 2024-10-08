@@ -96,10 +96,12 @@ ldconfig -N -v $(sed 's/:/ /' <<< $LD_LIBRARY_PATH) 2>/dev/null | grep libcudnn
 
 cat /usr/local/cuda-11.8/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
 
+# PyTorch Installation
+pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 --index-url https://download.pytorch.org/whl/cu118
+
 # Anaconda Installation
 sha256sum Anaconda3-2024.02-1-Linux-x86_64.sh
 bash Anaconda3-2024.02-1-Linux-x86_64.sh
-echo 'export PATH="/opt/anaconda3/bin:$PATH" >> ~/.bashrc'
 source ~/.bashrc
 
 sudo reboot
