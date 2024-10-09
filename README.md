@@ -48,4 +48,4 @@ And following [here](./settings.md) for additional settings.
 
 - DROID-SLAM [🔗](https://github.com/j-wye/droid_slam)
 
-- 
+- Holistic_Control [🔗](https://github.com/j-wye/Holistic_Control)
