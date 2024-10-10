@@ -6,7 +6,7 @@ sudo apt update
 sudo apt install fonts-noto-cjk-extra gnome-user-docs-ko hunspell-ko ibus-hangul language-pack-gnome-ko language-pack-ko hunspell-en-gb hunspell-en-au hunspell-en-ca hunspell-en-za -y
 ibus restart
 sudo apt update && sudo apt upgrade -y
-sudo apt install nvidia-driver-525 -y
+sudo apt install nvidia-driver-535 -y
 sudo apt install software-properties-common -y
 sudo add-apt-repository universe -y
 sudo apt update && sudo apt install curl -y
