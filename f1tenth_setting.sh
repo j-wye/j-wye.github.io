@@ -33,3 +33,7 @@ sudo apt-get install -y flatpak
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub com.vesc_project.VescTool -y -y -y
 flatpak run com.vesc_project.VescTool
+
+# build f1tenth ws
+sudo apt-get install libasio-dev
+sudo apt install ros-humble-io-context
