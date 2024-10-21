@@ -37,3 +37,4 @@ flatpak run com.vesc_project.VescTool
 # build f1tenth ws
 sudo apt-get install libasio-dev
 sudo apt install ros-humble-io-context
+sudo apt install ros-humble-asio-cmake-module
