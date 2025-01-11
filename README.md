@@ -1,6 +1,6 @@
 ### Ubuntu PC Auto Setup
 - Ubuntu 22.04 **Humble**
-- **Nvidia-driver-525**
+- **Nvidia-driver-535**
 - **CUDA 11.8**
 - **cuDNN 8.7.0**
 - include **Anaconda**
