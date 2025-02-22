@@ -54,7 +54,7 @@ echo "" >> ~/.bashrc
 eval "$(cat ~/.bashrc | tail -n +10)"
 echo "Type 'source ~/.bashrc' to apply settings"
 
-sudo apt install axel terminator -y
+sudo apt install axel terminator ros-humble-rmw-fastrtps-cpp* ros-humble-rmw-cyclonedds-cpp* -y
 
 # chrome deb file download
 axel https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
