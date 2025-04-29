@@ -22,9 +22,9 @@ sudo apt-get install python3-rosdep -y
 sudo rosdep init
 rosdep update
 sudo apt install ~nros-humble-rqt* -y
-sudo apt install python3-colcon-common-extensions ros-humble-image-transport-plugins python3-pip pv -y
+sudo apt install python3-colcon-common-extensions build-essential cmake git ros-humble-image-transport-plugins python3-pip pv -y
 sudo apt-get install ros-humble-gazebo-msgs ros-humble-gazebo-plugins ros-humble-gazebo-ros ros-humble-gazebo-ros2-control ros-humble-gazebo-ros-pkgs ros-humble-teleop-twist-keyboard -y
-sudo apt install ros-humble-octomap-ros libgoogle-glog-dev libgflags-dev python3-pip git -y
+sudo apt install ros-humble-octomap-ros libgoogle-glog-dev libgflags-dev -y
 printenv | grep -i ROS_DISTRO
 
 echo "# colcon_cd Setting " >> ~/.bashrc
