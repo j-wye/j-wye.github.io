@@ -1,4 +1,5 @@
 ### Ubuntu PC Auto Setup
+[asd](./Jetson_Installation.md)
 - Ubuntu 22.04 **Humble**
 - **Nvidia-driver-535**
 - **CUDA 11.8**
