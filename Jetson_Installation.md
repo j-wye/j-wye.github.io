@@ -13,10 +13,10 @@
 ## Second, install **NVIDIA SDK MANAGER** on Ubuntu
 - Install the deb file with *Software Install*
 
-    <video src="https://github.com/user-attachments/assets/e98d4010-b645-403c-9173-1e4aefc03844"></video>
+    <video src="https://github.com/user-attachments/assets/2ed3c1d7-fa11-472f-9360-093425f26192"></video>
 - Run sdk manager
 
-    <video src="https://github.com/user-attachments/assets/b66fab50-7b79-44d4-b2fd-b67739db2127"></video>
+    <video src="https://github.com/user-attachments/assets/996aebdf-4053-40d7-8e19-325079b0f826"></video>
     
 ## Finally, download *Jetpack* for Jetson Orin Nano 8GB
 - Login with Account and Select **Target Hardware**
@@ -37,7 +37,7 @@
 
 - Click the Continue button. On STEP 02, check the two buttons at the bottom as shown in the video below.
 
-    <video src="https://github.com/user-attachments/assets/64c46dd5-c936-4a37-af2d-44b246235766"></video>
+    <video src="https://github.com/user-attachments/assets/87b1b945-aef1-4f04-b290-2eca374e369f"></video>
 
 - The installation is complete. Click the finish button and exit.
 
