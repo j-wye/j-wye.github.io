@@ -8,7 +8,7 @@
 
 - Click *More Login Options* and login with your *Google Account*
     
-    <img src="./assets/more_login_options.png" height=500> <img src="./assets/google_account.png" width=400 height=500>
+    <img src="./assets/more_login_options.png" height=500></img> <img src="./assets/google_account.png" width=400 height=500></img>
 
 ## Second, install **NVIDIA SDK MANAGER** on Ubuntu
 - Install the deb file with *Software Install*
