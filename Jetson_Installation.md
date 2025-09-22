@@ -11,3 +11,4 @@
     - Run sdk manager
         <video src="./assets/sdkmanager_execute.mp4"></video>
     - 
+        <video src="https://github.com/user-attachments/assets/64c46dd5-c936-4a37-af2d-44b246235766"></video>
